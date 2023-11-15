@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#title{
+    font-size: 3.2rem;
+    margin-top: 1em;
+    text-align: center;
+}
+
+#paragraph{
+    font-size: 1.5rem;
+    margin-top: 1em;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-container{
+    margin-top: 1.2em;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+input{
+    width: 450px;
+    border: 1px solid tomato;
+    padding: .7em;
+    outline: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+input::placeholder{
+    color: tomato;
+    font-size: 1rem;
+}
+
+i{
+    cursor: pointer;
+    color: white;
+    font-size: 1.9em;
+    padding: .1em;
+    background-color: tomato;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#results-title{
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+    text-align: center;
+    font-size: 2.1rem;
+}
+
+.results{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2em;
+    margin-bottom: 1em;
+}
+
+.body-card{
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-card{
+    width: 100%;
+    height: 280px;
+}
+
+.content-card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-card{
+    text-align: center;
+    margin-top: 1em;
+}
+
+.btn-card{
+    background-color: tomato; 
+    color: #fff; 
+    padding: 10px 15px;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: .1s linear;
+}
+
+.btn-card:hover{
+    background-color: darkred;
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 1em auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+/* Estilos de la imagen en el modal */
+.modal-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Otros estilos específicos del contenido del modal */
+.modal h2 {
+    margin-top: 0;
+}
+
+.modal p {
+    margin-bottom: 0;
+}
